@@ -92,6 +92,10 @@ body {
     grid-column: 10/-1;
 }
 
+.article-date + .article-source::before {
+    content: ' · ';
+}
+
 .article-category {
     font-size: 14px;
     line-height: 17px;
@@ -130,6 +134,7 @@ body {
 .main-article__image-container {
     position: relative;
     grid-column: span 3;
+    overflow: hidden;
     min-height: 185px;
     max-height: 344px;
 }
@@ -193,10 +198,6 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-
-.article-date + .article-source::before {
-    content: ' · ';
 }
 
 .footer {
